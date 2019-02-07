@@ -2,9 +2,10 @@
 <html>
    <head>
    <link rel="stylesheet" href="base.css">
+   <meta charset="UTF-8">
    </head>
    <body>
-      <button class="collapsible">+</button>
+      <button id="one-click" class="collapsible">Have a Question?</button>
       <div class="content">
          <iframe
              allow="microphone;"
@@ -13,5 +14,19 @@
          </iframe>
       </div>
       <script src="collapse.js"></script>
+      <script>
+         function displayForm() {
+            window.setTimeout(()=>{
+                  window.open(
+                     "http://bit.ly/csuFeedback-test",
+                      height="600px",
+                      width="600px",
+                      left="600px");
+               }, 5000);
+         }
+         
+         var elem = document.getElementById('one-click');
+         elem.addEventListener("click", displayForm, {once : true});
+      </script>
    </body>
 </html>

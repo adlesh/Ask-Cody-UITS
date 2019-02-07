@@ -4,11 +4,11 @@
   color: #fff;
   cursor: pointer;
   border: none;
-  text-align: left;
+  text-align: center;
   outline: none;
-  font-size: 25px;
-  height=30px;
-  width=30px;
+  font-size: 18px;
+  height:30px;
+  width:500px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -18,16 +18,15 @@
 
 /* Style the collapsible content. Note: hidden by default */
 .content {
-   padding: 0 5px;
    display: none;
    overflow: hidden;
    background-color: #f1f1f1;
-   width=50%;
-   height=50%;
+   width:498px;
+   height:50%;
 } 
 
 #cody-frame {
    position: absolute;
    height: 50%;
-   width: 50%; 
+   width: 498px; 
 }
