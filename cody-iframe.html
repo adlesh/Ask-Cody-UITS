@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <link rel="stylesheet" href="base.css">
+   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   </head>
+   <body>
+      <table>
+         <tr>
+            <td >
+            <button class="collapsible">Have a Question?</button>
+            <div class="content" id='collapse'>
+               <iframe
+                   allow="microphone;"
+                   id="cody-frame"
+                   src="https://console.dialogflow.com/api-client/demo/embedded/askCody">
+               </iframe>
+            </div>
+            </td>
+         </tr>
+         <tr>
+         <td>
+            <button id='feedback' onclick="displayForm()">Feedback</button>
+         </td>
+         </tr>
+      </table>
+      <script src="collapse.js"></script>
+      
+      <script>
+         var feedbackOpen = false;
+         function displayForm() {
+               if (feedbackOpen) return;
+               else feedbackOpen = true;
+               
+               var iframe = document.createElement('IFRAME');
+               iframe.src = "http://bit.ly/csuFeedback-test";
+               iframe.height = '400px';
+               iframe.width = '400px';
+               document.body.appendChild(iframe);
+         }
+      </script>
+      <script>
+      $('.collapsible').click(()=> { 
+         $('#collapse').height(400);
+      });
+      </script>
+   </body>
+</html>
