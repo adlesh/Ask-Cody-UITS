@@ -1,0 +1,15 @@
+******ASKCODY SCHEDULE******
+Jan 23	Class start
+Jan 25	First uits communications
+Jan 30	First meeting with uits
+Feb 4	Rapid prototyping begins
+Feb 17	First report due
+
+
+***FUTURE GOALS***
+
+???	Second meeting with uits
+Feb 22	First presentation
+???	Finalize HTML/CSS end & add feedback link
+???	Finalize in-site implementation
+???	Begin user-testing
