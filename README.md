@@ -1,17 +1,6 @@
-# ASKCODY
-VERSION 0.1
+# ask-cody-ember
 
-This is an in-progress prototype for the AskCody user interface.
-This code is a work in progress and subject to change.
-
-
-CURRENT FEATURES:
--Access the chat bot internally
--Communicate using the wrapper
-
-KNOWN BUGS/ISSUES:
--Not cross-tested for non-UNIX machines
--Fixed size
+_AskCody_ is an existing in-production chatbot for frequently asked questions that UITS encounters. However, AskCody did not in its starting state have an existing interactive interface (aside from the one provided by its DialogFlow base). We are creating a means to interact with the DialogFlow base of the project including chatting with it, providing feedback, and fitting into a more uniform myCSU experience.
 
 ## Prerequisites
 
@@ -28,28 +17,33 @@ You will need the following things properly installed on your computer.
 * `cd ask-cody-ember`
 * `npm install`
 
-```
-git clone https://github.com/adlesh/uits-proto.git
-```
+## Running / Development
 
-### cd into the directory 
+* `ember serve`
+* Visit your app at [http://localhost:4200](http://localhost:4200).
+* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
 
-```
-cd uits-proto
-```
+### Code Generators
+#### cd into the directory 
+Make use of the many generators for code, try `ember help generate` for more details
 
-### cd into ask-cody-ember
+### Running Tests
 
-```
-cd ask-cody-ember
-```
+#### cd into ask-cody-ember
+* `ember test`
+* `ember test --server`
+
+### Linting
 
 ### INSTALL ALL DEPENDENCIES BEFORE COMPILING. REQUIRES NODE.
+=======
+* `npm run lint:hbs`
+* `npm run lint:js`
+* `npm run lint:js -- --fix`
 
-```
-npm install
-```
+### Building
 
+<<<<<<< Updated upstream
 
 ### Running / Development
 
@@ -71,31 +65,12 @@ cd uits-proto/ask-cody-ember
 ```
 node app.js
 ```
-
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Linting
-
-* `npm run lint:hbs`
-* `npm run lint:js`
-* `npm run lint:js -- --fix`
-
-### Building
-
 * `ember build` (development)
 * `ember build --environment production` (production)
 
 ### Deploying
-
 Specify what it takes to deploy your app.
+
 
 ## Further Reading / Useful Links
 
@@ -104,6 +79,5 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
 
 
