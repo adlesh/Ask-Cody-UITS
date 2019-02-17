@@ -1,0 +1,20 @@
+<!--./app/templates/components/bot-app.hbs-->
+<!--Authors: Kristen Wright-->
+<div class= "chat_box" >
+  <div class= "log" >
+        <p class = "received">
+          Hello! Please ask me your questions.
+        </p>
+        {{#each chats as |chat|}}
+        <p class = "message">
+          {{ chat.query }}
+        </p>
+        <p class = "received">
+          {{ chat.speech }}
+        </p>
+        {{/each}}
+  </div>
+  <div class = "questionform">
+    {{input value=message enter=(action "send") class="form-control" placeholder="Ask me anything..."}}
+  </div>
+</div>
