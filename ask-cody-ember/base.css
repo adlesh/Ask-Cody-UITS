@@ -17,6 +17,10 @@
   background-color: #00e;
 }
 
+#feedback {
+	width: 500px;
+}
+
 /* Style the collapsible content. Note: hidden by default */
 .content {
    display: none;   
