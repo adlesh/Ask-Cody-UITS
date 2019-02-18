@@ -28,6 +28,13 @@ This project uses Ember.js web framework and Node along with the Pusher-js libra
 * `npm run lint:js`
 * `npm run lint:js -- --fix`
 
+## Known Bugs/Issues
+
+* Fixed size - cannot resize
+* Long delay between sent/received messages
+* Sometimes receives other user's messages - only works for one client at a time
+* Text sometimes clips outside of message divs
+
 ## Useful Links
 * Browser Extensions for Ember development
   * [ember inspector for Chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
