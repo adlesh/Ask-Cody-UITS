@@ -19,19 +19,10 @@
 
 /* Style the collapsible content. Note: hidden by default */
 .content {
-   display: none;
-   
+   display: none;   
    background-color: #f1f1f1;
-   width:498px;
-   height:50%;
-} 
-
-#cody-frame {
-   position: absolute;
-   height: 50%;
-   width: 498px; 
 } 
 
 .coll-row {
-   height : 500px;
+   height : 650px;
 }

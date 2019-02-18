@@ -6,14 +6,17 @@
    </head>
    <body>
       <table>
-         <tr>
+         <tr >
             <td >
             <button class="collapsible">Have a Question?</button>
-            <div class="content" id='collapse'>
+            <div class="content" id='collapse' position='relative'>
+            <!--src="https://console.dialogflow.com/api-client/demo/embedded/askCody"-->
                <iframe
                    allow="microphone;"
-                   id="cody-frame"
-                   src="https://console.dialogflow.com/api-client/demo/embedded/askCody">
+                   id="cody-frame"                   
+                   src="http://localhost:4200"
+                   width=500px
+                   height=400px>
                </iframe>
             </div>
             </td>
