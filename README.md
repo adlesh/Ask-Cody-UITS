@@ -34,6 +34,7 @@ This project uses Ember.js web framework and Node along with the Pusher-js libra
 * Long delay between sent/received messages
 * Sometimes receives other user's messages - only works for one client at a time
 * Text sometimes clips outside of message divs
+* Listener listens for all return-key sequences detected by my browser, sends repeat queries
 
 ## Useful Links
 * Browser Extensions for Ember development
