@@ -8,7 +8,7 @@ Feb 17	First report due
 
 ***FUTURE GOALS***
 
-???	Second meeting with uits
+Feb 21	Second meeting with uits
 Feb 22	First presentation
 ???	Finalize HTML/CSS end & add feedback link
 ???	Finalize in-site implementation
