@@ -6,46 +6,61 @@
    </head>
    <body>
       <table>
-         <tr >
-            <td >
-            <button class="collapsible">Have a Question?</button>
-            <div class="content" id='collapse' position='relative'>
-            <!--src="https://console.dialogflow.com/api-client/demo/embedded/askCody"-->
-               <iframe
-                   allow="microphone;"
-                   id="cody-frame"                   
-                   src="http://localhost:4200"
-                   width=500px
-                   height=400px>
-               </iframe>
-            </div>
-            </td>
-         </tr>
-         <tr>
-         <td>
-            <button id='feedback' onclick="displayForm()">Feedback</button>
-         </td>
-         </tr>
+      	<thead id="bot-thead">
+      		<tr>
+      			<td>
+      			Ask Cody v0.1 Demo
+      			</td>
+      		</tr>
+      	</thead>
+      	<tbody align="center">
+         	<tr>
+            	<td>
+            	<div id="trigger">Have a Question?</div>
+            	<div class="content" id='bot-content'>
+               	<iframe class="frame" 
+		  	   	   	id="bot-frame"
+                   	allow="microphone;"                 
+                   	src="http://localhost:4200"
+                   	height=590
+                   	width=425>
+               	</iframe>
+            	</div>
+            	</td>
+         	</tr>
+         	<tr>
+         		<td>
+            		<button id='feedback'>Feedback</button>
+         		</td>
+         	</tr>
+         </tbody>
       </table>
-      <script src="collapse.js"></script>
+      <script>
+      	$('#trigger').click(()=>{
+      			var content_div = document.getElementById("bot-content");
+  				if (content_div.style.display === "none") {
+    				content_div.style.display = "block";
+  				} else {
+    				content_div.style.display = "none";
+  				}
+      		});
+      		
+      	 	var feedbackOpen = false;
+         	$('#feedback').click(() => {
+               	if (feedbackOpen) return;
+               	else feedbackOpen = true;
+               	
+               	var iframe = document.createElement('IFRAME');
+               	iframe.src = "http://bit.ly/csuFeedback-test";
+               	iframe.height = '400px';
+               	iframe.width = '500px';
+               	document.body.appendChild(iframe);
+         	});
+      	$('document').ready(()=>{
+      		
+         });
+      </script>
       
-      <script>
-         var feedbackOpen = false;
-         function displayForm() {
-               if (feedbackOpen) return;
-               else feedbackOpen = true;
-               
-               var iframe = document.createElement('IFRAME');
-               iframe.src = "http://bit.ly/csuFeedback-test";
-               iframe.height = '400px';
-               iframe.width = '500px';
-               document.body.appendChild(iframe);
-         }
-      </script>
-      <script>
-      $('.collapsible').click(()=> { 
-         $('#collapse').height(400);
-      });
-      </script>
+     
    </body>
 </html>
