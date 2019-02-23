@@ -2,14 +2,16 @@
 <html>
    <head>
    <link rel="stylesheet" href="base.css">
-   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.6.5/iframeResizer.min.js" integrity="sha256-KnY2g0Sbkt/I9JJh+hQGJFHDYr0kfUZDMB0cFmgGOdA=" crossorigin="anonymous"></script>
    </head>
    <body>
       <table>
       	<thead id="bot-thead">
       		<tr>
       			<td>
-      			Ask Cody v0.1 Demo
+					Ask Cody v0.1 Demo
+					
       			</td>
       		</tr>
       	</thead>
@@ -21,9 +23,9 @@
                	<iframe class="frame" 
 		  	   	   	id="bot-frame"
                    	allow="microphone;"                 
-                   	src="http://localhost:4200"
-                   	height=590
-                   	width=425>
+							 src="http://localhost:4200"
+							 frameborder=0
+							 scrolling=no>
                	</iframe>
             	</div>
             	</td>
@@ -37,7 +39,10 @@
       </table>
       <script>
       	$('#trigger').click(()=>{
-      			var content_div = document.getElementById("bot-content");
+					var content_div = document.getElementById("bot-content");
+					//$(this).toggleClass('.active');
+					var trigger_div = document.getElementById('#trigger');
+				//	trigger_div.classList.toggle('.active');
   				if (content_div.style.display === "none") {
     				content_div.style.display = "block";
   				} else {
@@ -55,7 +60,8 @@
                	iframe.height = '400px';
                	iframe.width = '500px';
                	document.body.appendChild(iframe);
-         	});
+				});
+				iFrameResize({log:true}, '#bot-frame')
       	$('document').ready(()=>{
       		
          });

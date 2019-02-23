@@ -12,7 +12,6 @@
  table {
 	background-color: #036;
  }
- 
  #bot-thead {
 	font-size: 35px;
 	color: #fff;
@@ -20,7 +19,18 @@
 	text-align: center;
  }
 
-#trigger:hover {
+ #bot-content {
+    background-color: #e31837;
+ }
+
+#bot-frame {
+   width: 1px;
+   min-width: 100%;
+   height: 1px;
+   min-height: 100px;
+}
+
+.active, #trigger:hover{
 	background-color: #fff;
 	color: #036;
 }
@@ -35,4 +45,8 @@
    display: none;   
    background-color: #fff;
 } 
+
+/*.active {
+   background-color: #e31837;
+}*/
 
