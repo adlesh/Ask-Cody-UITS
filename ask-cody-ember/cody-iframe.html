@@ -4,6 +4,37 @@
    <link rel="stylesheet" href="base.css">
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.6.5/iframeResizer.min.js" integrity="sha256-KnY2g0Sbkt/I9JJh+hQGJFHDYr0kfUZDMB0cFmgGOdA=" crossorigin="anonymous"></script>
+	<script>
+		  $(function(){
+				$('#trigger').on('click', function(e){
+					e.preventDefault();
+					console.log('hello');
+					var content_div = document.getElementById('bot-content');
+					
+					if (content_div.style.display === 'none') {
+						content_div.style.display = 'block';
+						iFrameResize({log:true}, '#bot-frame');
+					}
+					else {
+						content_div.style.display = 'none';
+					}
+					
+				});
+					
+				var feedbackOpen = false;
+				$('#feedback').click(function() {
+					if (feedbackOpen) return;
+					else feedbackOpen = true;
+					
+					var iframe = document.createElement('IFRAME');
+					iframe.src = "http://bit.ly/csuFeedback-test";
+					iframe.height = '400px';
+					iframe.width = '500px';
+					document.body.appendChild(iframe);
+				});
+			});
+			
+		</script>
    </head>
    <body>
       <table>
@@ -18,16 +49,16 @@
       	<tbody align="center">
          	<tr>
             	<td>
-            	<div id="trigger">Have a Question?</div>
-            	<div class="content" id='bot-content'>
-               	<iframe class="frame" 
-		  	   	   	id="bot-frame"
-                   	allow="microphone;"                 
-							 src="http://localhost:4200"
-							 frameborder=0
-							 scrolling=no>
-               	</iframe>
-            	</div>
+					<div id="trigger">Have a Question?</div>
+					<div class="content" id='bot-content'>
+					<iframe class="frame" 
+						id="bot-frame"
+						allow="microphone;"                 
+					    src="http://localhost:4200"
+						frameborder=0
+						scrolling=no>
+					</iframe>
+					</div>
             	</td>
          	</tr>
          	<tr>
@@ -36,37 +67,7 @@
          		</td>
          	</tr>
          </tbody>
-      </table>
-      <script>
-      	$('#trigger').click(()=>{
-					var content_div = document.getElementById("bot-content");
-					//$(this).toggleClass('.active');
-					var trigger_div = document.getElementById('#trigger');
-				//	trigger_div.classList.toggle('.active');
-  				if (content_div.style.display === "none") {
-    				content_div.style.display = "block";
-  				} else {
-    				content_div.style.display = "none";
-  				}
-      		});
-      		
-      	 	var feedbackOpen = false;
-         	$('#feedback').click(() => {
-               	if (feedbackOpen) return;
-               	else feedbackOpen = true;
-               	
-               	var iframe = document.createElement('IFRAME');
-               	iframe.src = "http://bit.ly/csuFeedback-test";
-               	iframe.height = '400px';
-               	iframe.width = '500px';
-               	document.body.appendChild(iframe);
-				});
-				iFrameResize({log:true}, '#bot-frame')
-      	$('document').ready(()=>{
-      		
-         });
-      </script>
-      
+      </table>      
      
    </body>
 </html>

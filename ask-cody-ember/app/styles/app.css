@@ -51,8 +51,21 @@
   font-family: sans-serif;
   font-weight:lighter;
 }
+
+#submit-button {
+	width: 20%;
+	height : 85%;
+	font-size: 12px;
+	text-align: center;
+	color: white;
+	background-color: #036;
+	font-weight: heavy;
+	border-radius: 4px;
+	//display: block;
+}
+
 input {
-  width: 85%;
+  width: 75%;
   height: 85%;
   margin: none;
   padding: 4px;
