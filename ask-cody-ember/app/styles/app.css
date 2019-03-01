@@ -20,7 +20,7 @@
   background: rgba(255,255,255, 0.3);
 }
 .questionform {
-  height: 30px;
+  height: 50px;
   background-color: rgba(255,255,255, 0.6);
   padding: 4px;
   padding-bottom: 10px;
@@ -47,7 +47,7 @@
   font-family: sans-serif;
   font-weight:lighter;
 }
-input {
+textarea {
   width: 85%;
   height: 85%;
   margin: none;
@@ -59,7 +59,7 @@ input {
   overflow-wrap: break-word;
   text-align: top;
 }
-input:focus {
+textarea:focus {
   border: 2px;
   opacity: 1.0;
 }
