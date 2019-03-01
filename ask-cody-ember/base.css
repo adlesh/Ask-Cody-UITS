@@ -40,7 +40,7 @@
 /* Style the collapsible content. Note: hidden by default */
 .content {
    display: none;   
-   background-color: #e31837;
+   background-color: #fff;/*e31837*/;
 } 
 
 /*.active {

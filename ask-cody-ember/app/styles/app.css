@@ -3,7 +3,7 @@
 * Authors: Kristen Wright
 */
 #check {
-  background-color: #fff;/*#e31837;*/
+  background-color: #e31837;*
 }
 
 .text {
@@ -15,7 +15,7 @@
   /*width: 100%310px*/
   height: auto;
   /* WARNING! Old browsers (IE) do not support rgba colloring.  */
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
   background: url('https://ur.columbusstate.edu/logos/logo_files/2015/CSU_Logo_Tower.png');
   border-style:solid;
   border-width:4px;
@@ -66,7 +66,8 @@
 	width: 15%;
 	height : 85%;
   font-size: 12px;
-  
+  margin-left: auto;
+  margin-right: auto;
 	text-align: center;
 	color: white;
 	background-color: #036;
@@ -77,6 +78,8 @@
 
 textarea {
   width: 75%;
+  max-width: 100%;
+  max-height: 100%;
   margin: none;
   padding: 4px;
   resize: none;
