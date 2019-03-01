@@ -4,37 +4,7 @@
    <link rel="stylesheet" href="base.css">
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.6.5/iframeResizer.min.js" integrity="sha256-KnY2g0Sbkt/I9JJh+hQGJFHDYr0kfUZDMB0cFmgGOdA=" crossorigin="anonymous"></script>
-	<script>
-		  $(function(){
-				$('#trigger').on('click', function(e){
-					e.preventDefault();
-					console.log('hello');
-					var content_div = document.getElementById('bot-content');
-					
-					if (content_div.style.display === 'none') {
-						content_div.style.display = 'block';
-						iFrameResize({log:true}, '#bot-frame');
-					}
-					else {
-						content_div.style.display = 'none';
-					}
-					
-				});
-					
-				var feedbackOpen = false;
-				$('#feedback').click(function() {
-					if (feedbackOpen) return;
-					else feedbackOpen = true;
-					
-					var iframe = document.createElement('IFRAME');
-					iframe.src = "http://bit.ly/csuFeedback-test";
-					iframe.height = '400px';
-					iframe.width = '500px';
-					document.body.appendChild(iframe);
-				});
-			});
-			
-		</script>
+	
    </head>
    <body>
       <table>
@@ -68,6 +38,38 @@
          	</tr>
          </tbody>
       </table>      
-     
+     <script>
+
+				$('#bot-content').hide();
+				$('#trigger').on('click', function(){
+					//e.preventDefault();
+					console.log('hello');
+					var content_div = document.getElementById('bot-content');
+					
+					if (content_div.style && content_div.style.display !== 'none') {
+						content_div.style.display = 'none';
+						
+					}
+					else {
+						content_div.style.display = 'block';
+						iFrameResize({log:true}, '#bot-frame');
+					}
+					
+				});
+				</script>
+					<script>
+				var feedbackOpen = false;
+				$('#feedback').click(function() {
+					if (feedbackOpen) return;
+					else feedbackOpen = true;
+					
+					var iframe = document.createElement('IFRAME');
+					iframe.src = "http://bit.ly/csuFeedback-test";
+					iframe.height = '400px'; 
+					iframe.width = '500px';
+					document.body.appendChild(iframe);
+				});
+			
+		</script>
    </body>
 </html>

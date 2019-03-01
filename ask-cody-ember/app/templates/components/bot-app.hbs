@@ -1,6 +1,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.6.5/iframeResizer.contentWindow.min.js" integrity="sha256-8oAiDWey5TRmuH/usXCnXzwBUoBRI3KUj1uQAlXlFKw=" crossorigin="anonymous"></script>
 <!--./app/templates/components/bot-app.hbs-->
 <!--Authors: Kristen Wright-->
+<div id='check'>
 <div class= "chat_box" >
   <div class= "log" >
         <p class = "received">
@@ -15,7 +16,9 @@
         </p>
         {{/each}}
   </div>
+  
   <div class = "questionform">
     {{input value=message enter=(action "send") class="form-control" placeholder="Ask me anything..."}}<button id="submit-button" {{action "send"}}>Submit</button>
+  </div>
   </div>
 </div>

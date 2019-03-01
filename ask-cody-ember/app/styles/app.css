@@ -2,6 +2,10 @@
 * Basic css file to power bot-app.hbs template on index.html
 * Authors: Kristen Wright
 */
+#check {
+  background-color: #fff;/*#e31837;*/
+}
+
 .chat_box {
   position: relative;
   /*width: 100%310px*/
@@ -55,11 +59,11 @@
 #submit-button {
 	width: 20%;
 	height : 85%;
-	font-size: 12px;
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 	text-align: center;
 	color: white;
 	background-color: #036;
-	font-weight: heavy;
 	border-radius: 4px;
 	//display: block;
 }
