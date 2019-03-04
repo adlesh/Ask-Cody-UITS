@@ -12,7 +12,6 @@
 
 .chat_box {
   position: relative;
-  /*width: 100%310px*/
   height: auto;
   /* WARNING! Old browsers (IE) do not support rgba colloring.  */
   background-color: rgba(0, 0, 0, 0.9);
@@ -22,7 +21,6 @@
   border-color: rgba(0, 80, 140, 1.0);
   margin: none;
   
-  object-fit: fill;
   //padding:2px;
 }
 .log {
@@ -37,6 +35,9 @@
   background-color: rgba(255,255,255, 0.6);
   padding: 4px;
   padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .message {
   width: 85%;
@@ -66,14 +67,16 @@
 	width: 15%;
 	height : 85%;
   font-size: 12px;
-  margin-left: auto;
-  margin-right: auto;
 	text-align: center;
 	color: white;
 	background-color: #036;
 	border-radius: 4px;
-	display: inline-block;
-	vertical-align: top;
+	vertical-align: baseline;
+}
+
+#submit-button:hover {
+	background-color: #fff;
+	color: #036;
 }
 
 textarea {
