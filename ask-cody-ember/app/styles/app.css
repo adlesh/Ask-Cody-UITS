@@ -3,7 +3,7 @@
 * Authors: Kristen Wright
 */
 #check {
-  background-color: #e31837;*
+  /*background-color: #e31837;*/
 }
 
 .text {
@@ -20,7 +20,7 @@
   border-width:4px;
   border-color: rgba(0, 80, 140, 1.0);
   margin: none;
-  
+
   //padding:2px;
 }
 .log {
@@ -42,20 +42,27 @@
 .message {
   width: 85%;
   float: right;
-  background-color: rgba(230, 240, 255, 0.95);
+  background-color: rgba(240, 250, 255, 0.95);
   border-radius:10px;
   padding: 5px;
   text-align: right;
   padding-right: 10px;
 }
+.message:hover {
+  background-color: rgba(240, 250, 255, 1.0);
+}
 .received {
   width: 85%;
   float: left;
-  background-color: rgba(150, 200, 255, 0.95);
+  background-color: rgba(0, 51, 102, 0.95);
   border-radius:10px;
   padding:5px;
   overflow-wrap: break-word;
   text-align: left;
+  color: #FFF;
+}
+.received:hover {
+  background-color: rgba(0, 51, 102, 1.0);
 }
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
