@@ -1,51 +1,92 @@
 <!DOCTYPE html>
 <html>
    <head>
-   <link rel="stylesheet" href="base.css">
-   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<!-- A wrapper for CSU's help bot; project-name AskCody, for Sr. SW
+		 Eng. Proj. Assignment.
+		 
+		 Authors: Andrew Lesh
+		 Date:    03/02/2019 -->
+	<link rel="stylesheet" href="base.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.6.5/iframeResizer.min.js" integrity="sha256-KnY2g0Sbkt/I9JJh+hQGJFHDYr0kfUZDMB0cFmgGOdA=" crossorigin="anonymous"></script>
+	
    </head>
    <body>
+	   <!-- table wrapping the bot -->
       <table>
-         <tr >
-            <td >
-            <button class="collapsible">Have a Question?</button>
-            <div class="content" id='collapse' position='relative'>
-            <!--src="https://console.dialogflow.com/api-client/demo/embedded/askCody"-->
-               <iframe
-                   allow="microphone;"
-                   id="cody-frame"                   
-                   src="http://localhost:4200"
-                   width=500px
-                   height=400px>
-               </iframe>
-            </div>
-            </td>
-         </tr>
-         <tr>
-         <td>
-            <button id='feedback' onclick="displayForm()">Feedback</button>
-         </td>
-         </tr>
-      </table>
-      <script src="collapse.js"></script>
-      
-      <script>
-         var feedbackOpen = false;
-         function displayForm() {
-               if (feedbackOpen) return;
-               else feedbackOpen = true;
-               
-               var iframe = document.createElement('IFRAME');
-               iframe.src = "http://bit.ly/csuFeedback-test";
-               iframe.height = '400px';
-               iframe.width = '500px';
-               document.body.appendChild(iframe);
-         }
-      </script>
-      <script>
-      $('.collapsible').click(()=> { 
-         $('#collapse').height(400);
-      });
-      </script>
+      	<thead id="bot-thead">
+      		<tr>
+      			<td>
+					<!-- placeholder name for the bot --> 
+					<!-- should prob be removed before use -->
+					Ask Cody v0.1 Demo
+					
+      			</td>
+      		</tr>
+      	</thead>
+      	<!-- align center tells the browser to display all content
+			 center justified within it table's body-->
+      	<tbody align="center">
+         	<tr> <!-- create a row to hold a button that triggers the
+					  the bots display to the user -->
+            	<td>
+					<div id="trigger">Have a Question?</div>
+					<div class="content" id='bot-content'>
+					<iframe class="frame" 
+						id="bot-frame"
+						allow="microphone;"                 
+					    src="http://localhost:4200"
+						frameborder=0
+						scrolling=no>
+					</iframe>
+					</div>
+            	</td>
+         	</tr>
+         	<tr>
+         		<td>
+            		<button id='feedback'>Feedback</button>
+         		</td>
+         	</tr>
+         </tbody>
+      </table>      
+     <script>
+		 		
+				$('#bot-content').hide(); // adding this line was the temp fix... for the double click issue
+				$('#trigger').on('click', function(){
+					//e.preventDefault();
+					console.log('hello');
+					var content_div = document.getElementById('bot-content');
+					
+					// ensure the isn't shown until the button is clicked or specified by user
+					if (content_div.style && content_div.style.display !== 'none') {
+						content_div.style.display = 'none';
+						
+					}
+					else {
+						content_div.style.display = 'block';
+						iFrameResize({log:true}, '#bot-frame');
+					}
+					
+				});
+		</script>
+		<script>
+				var feedbackOpen = false;
+				$('#feedback').click(function() {
+					// one click only; the form should remain open once 
+					// created
+					if (feedbackOpen) return;
+					else feedbackOpen = true;
+					
+					// creates the iframe to host the google forms site
+					var iframe = document.createElement('IFRAME');
+					// replace this with the url of the actual form used
+					iframe.src = "http://bit.ly/csuFeedback-test";
+					iframe.height = '400px'; 
+					iframe.width = '500px';
+					// adds the iframe to the documents body
+					document.body.appendChild(iframe);
+				});
+			
+		</script>
    </body>
 </html>

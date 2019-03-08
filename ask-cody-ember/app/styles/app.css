@@ -2,15 +2,26 @@
 * Basic css file to power bot-app.hbs template on index.html
 * Authors: Kristen Wright
 */
+#check {
+  background-color: #e31837;*
+}
+
+.text {
+	font-family: sans-serif; /*Verdana, Geneva, Tahoma, sans-serif;*/
+}
+
 .chat_box {
-  width: 310px;
+  position: relative;
+  height: auto;
   /* WARNING! Old browsers (IE) do not support rgba colloring.  */
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
   background: url('https://ur.columbusstate.edu/logos/logo_files/2015/CSU_Logo_Tower.png');
   border-style:solid;
   border-width:4px;
   border-color: rgba(0, 80, 140, 1.0);
-  padding:2px;
+  margin: none;
+  
+  //padding:2px;
 }
 .log {
   height:450px;
@@ -24,6 +35,9 @@
   background-color: rgba(255,255,255, 0.6);
   padding: 4px;
   padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .message {
   width: 85%;
@@ -44,12 +58,31 @@
   text-align: left;
 }
 * {
-  font-family: sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight:lighter;
 }
+
+
+#submit-button {
+	width: 15%;
+	height : 85%;
+  font-size: 12px;
+	text-align: center;
+	color: white;
+	background-color: #036;
+	border-radius: 4px;
+	vertical-align: baseline;
+}
+
+#submit-button:hover {
+	background-color: #fff;
+	color: #036;
+}
+
 textarea {
-  width: 85%;
-  height: 85%;
+  width: 75%;
+  max-width: 100%;
+  max-height: 100%;
   margin: none;
   padding: 4px;
   resize: none;
@@ -58,6 +91,7 @@ textarea {
   opacity: 0.9;
   overflow-wrap: break-word;
   text-align: top;
+  vertical-align: top;
 }
 textarea:focus {
   border: 2px;
