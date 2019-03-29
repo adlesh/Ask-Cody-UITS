@@ -1,11 +1,11 @@
 export default {
     red: {
       header: {
-        bg: '#D32F2F',
+        bg: '#e31837',
         text: '#fff'
       },
       launcher: {
-        bg: '#D32F2F'
+        bg: '#e31837'
       },
       messageList: {
         bg: '#fff'
@@ -24,27 +24,27 @@ export default {
       }
     },    blue: {
       header: {
-        bg: '#003359',
+        bg: '#003767',
         text: '#ffffff'
       },
       launcher: {
-        bg: '#003359'
+        bg: '#003767'
       },
       messageList: {
         bg: '#ffffff'
       },
       sentMessage: {
-        bg: '#003359',
+        bg: '#003767',
         text: '#ffffff'
       },
       receivedMessage: {
         bg: '#fff',
-        text: '#003359'
+        text: '#003767'
       },
       userInput: {
         bg: '#f4f7f9',
         text: '#565867'
       }
-    
+
     }
   }

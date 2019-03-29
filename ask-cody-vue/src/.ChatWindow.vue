@@ -7,7 +7,7 @@
       :colors="colors"
       @userList="handleUserListToggle"
     />
-    <UserList 
+    <UserList
       v-if="showUserList"
       :participants="participants"
     />
@@ -140,7 +140,7 @@ export default {
   justify-content: space-between;
   transition: 0.3s ease-in-out;
   border-radius: 10px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'berling', 'futura', sans-serif;;
 }
 
 .sc-chat-window.closed {

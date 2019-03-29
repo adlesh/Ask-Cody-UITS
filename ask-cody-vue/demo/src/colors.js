@@ -5,13 +5,13 @@ export default {
         text: '#fff'
       },
       launcher: {
-        bg: '#D32F2F'
+        bg: '#e31837'
       },
       messageList: {
         bg: '#fff'
       },
       sentMessage: {
-        bg: '#F44336',
+        bg: '#e31837',
         text: '#fff'
       },
       receivedMessage: {
@@ -49,17 +49,17 @@ export default {
     },
     blue: {
       header: {
-        bg: '#4e8cff',
+        bg: '#003767',
         text: '#ffffff'
       },
       launcher: {
-        bg: '#4e8cff'
+        bg: '#003767'
       },
       messageList: {
         bg: '#ffffff'
       },
       sentMessage: {
-        bg: '#4e8cff',
+        bg: '#003767',
         text: '#ffffff'
       },
       receivedMessage: {
