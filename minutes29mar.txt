@@ -1,0 +1,7 @@
+minutes - uits meeting
+Elnatan's back-end resources etc
+
+Show ember chat - proof of concept
+Show beautiful chat library - future of chatbot (in development)
+Github - uits host?
+Test cases
