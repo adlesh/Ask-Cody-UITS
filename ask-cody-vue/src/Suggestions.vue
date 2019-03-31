@@ -7,20 +7,20 @@
 
 <script>
 export default {
-    data() {
-        return {
-        }
-    },
-    props: {
-        suggestions: {
-            type: Array,
-            default: () => []
-        },
-        colors: {
-            type: Object,
-            required: true
-        }
+  data () {
+    return {
     }
+  },
+  props: {
+    suggestions: {
+      type: Array,
+      default: () => []
+    },
+    colors: {
+      type: Object,
+      required: true
+    }
+  }
 }
 </script>
 

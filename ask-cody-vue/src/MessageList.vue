@@ -42,24 +42,24 @@ export default {
     _scrollDown () {
       this.$refs.scrollList.scrollTop = this.$refs.scrollList.scrollHeight
     },
-    shouldScrollToBottom() {
+    shouldScrollToBottom () {
       return this.alwaysScrollToBottom || (this.$refs.scrollList.scrollTop > this.$refs.scrollList.scrollHeight - 600)
     },
-    profile(author) {
+    profile (author) {
       const profile = this.participants.find(profile => profile.id === author)
 
       // A profile may not be found for system messages or messages by 'me'
       return profile || {imageUrl: '', name: ''}
     },
-    chatImageUrl(author) {
+    chatImageUrl (author) {
       return this.profile(author).imageUrl
     },
-    authorName(author) {
+    authorName (author) {
       return this.profile(author).name
     }
   },
   computed: {
-    defaultChatIcon() {
+    defaultChatIcon () {
       return chatIcon
     }
   },
@@ -67,8 +67,7 @@ export default {
     this._scrollDown()
   },
   updated () {
-    if (this.shouldScrollToBottom())
-      this.$nextTick(this._scrollDown())
+    if (this.shouldScrollToBottom()) { this.$nextTick(this._scrollDown()) }
   }
 }
 </script>

@@ -60,19 +60,19 @@ export default {
     }
   },
   methods: {
-    sentColorsStyle() {
+    sentColorsStyle () {
       return {
         color: this.colors.sentMessage.text,
         backgroundColor: this.colors.sentMessage.bg
       }
     },
-    receivedColorsStyle() {
+    receivedColorsStyle () {
       return {
         color: this.colors.receivedMessage.text,
         backgroundColor: this.colors.receivedMessage.bg
       }
     },
-    determineMessageColors() {
+    determineMessageColors () {
       return this.message.author === 'me' ? this.sentColorsStyle() : this.receivedColorsStyle()
     }
   }

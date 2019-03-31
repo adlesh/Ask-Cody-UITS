@@ -95,7 +95,7 @@ export default {
         event.preventDefault()
       }
     },
-    _submitSuggestion(suggestion) {
+    _submitSuggestion (suggestion) {
       this.onSubmit({author: 'me', type: 'text', data: { text: suggestion }})
     },
     _submitText (event) {

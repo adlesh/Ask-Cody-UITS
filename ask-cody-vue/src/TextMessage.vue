@@ -26,7 +26,7 @@ export default {
     }
   },
   computed: {
-    messageText() {
+    messageText () {
       const escaped = escapeGoat.escape(this.data.text)
 
       return Autolinker.link(this.messageStyling ? fmt(escaped) : escaped, {
