@@ -9,9 +9,9 @@
         backgroundImage: `url(${chatImageUrl})`
       }" v-tooltip="message.author"></div>
       <TextMessage v-if="message.type === 'text'" :data="message.data" :messageColors="determineMessageColors()" :messageStyling="messageStyling" />
-      <EmojiMessage v-else-if="message.type === 'emoji'" :data="message.data" />
+      <!--EmojiMessage v-else-if="message.type === 'emoji'" :data="message.data" />
       <FileMessage v-else-if="message.type === 'file'" :data="message.data" :messageColors="determineMessageColors()" />
-      <TypingMessage v-else-if="message.type === 'typing'" :messageColors="determineMessageColors()" />
+      <TypingMessage v-else-if="message.type === 'typing'" :messageColors="determineMessageColors()" /-->
       <SystemMessage v-else-if="message.type === 'system'" :data="message.data" :messageColors="determineMessageColors()" />
     </div>
   </div>
@@ -19,9 +19,9 @@
 
 <script>
 import TextMessage from './TextMessage.vue'
-import FileMessage from './FileMessage.vue'
+/*import FileMessage from './FileMessage.vue'
 import EmojiMessage from './EmojiMessage.vue'
-import TypingMessage from './TypingMessage.vue'
+import TypingMessage from './TypingMessage.vue'*/
 import SystemMessage from './SystemMessage.vue'
 import chatIcon from './assets/chat-icon.svg'
 

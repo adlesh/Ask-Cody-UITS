@@ -6,10 +6,6 @@
       :onClose="onClose"
       :colors="colors"
     />
-    <!--UserList 
-      v-if="showUserList"
-      :participants="participants"
-    /-->
     <MessageList
       v-if="!showUserList"
       :messages="messages"
@@ -29,9 +25,6 @@
 </template>
 
 <script>
-/*: showEmoji="showEmoji"
-      @userList="handleUserListToggle"
-      :showFile="showFile" */
 import Header from './Header.vue'
 import MessageList from './MessageList.vue'
 import UserInput from './UserInput.vue'

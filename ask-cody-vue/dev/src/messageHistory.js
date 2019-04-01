@@ -1,6 +1,6 @@
 export default [
-   { type: 'text', author: `me`, data: { text: `Why don't they have salsa on the table?` } },
-  { type: 'text', author: `mattmezza`, data: { text: `What do you need salsa for?` } },
+   { type: 'text', author: `me`, data: { text: `Hello. How may I assist you?` } },
+  /*{ type: 'text', author: `mattmezza`, data: { text: `What do you need salsa for?` } },
   { type: 'text', author: `me`, data: { text: `Salsa is now the number one condiment in America.` } },
   { type: 'text', author: `mattmezza`, data: { text: `You know why? Because people like to say 'salsa.' 'Excuse me, do you have salsa?' 'We need more salsa.' 'Where is the salsa? No salsa?'` } },
   { type: 'text', author: `me`, data: { text: `You know it must be impossible for a Spanish person to order seltzer and not get salsa. 'I wanted seltzer, not salsa.'` } },
@@ -21,5 +21,5 @@ export default [
   { type: 'text', author: `me`, data: { text: `Do you read me...`, meta: '✓✓ Read' } },
   { type: 'text', author: `me`, data: { text: `...or not?`, meta: '✓ Delivered' } },
   { type: 'system', data: { text: 'User changed security key', meta: '04-08-2018 15:57' } },
-  /*{ type: 'text', author: `support`, data: { text: `What about suggestions?` }, suggestions: ["Looks good!", "It's OK.", "Uhh.. Do I really have to say something?", "This suggestion is way too long for css purpose. Let's make it long... Longer, and more and more.. Never ending."] } */
+  { type: 'text', author: `support`, data: { text: `What about suggestions?` }, suggestions: ["Looks good!", "It's OK.", "Uhh.. Do I really have to say something?", "This suggestion is way too long for css purpose. Let's make it long... Longer, and more and more.. Never ending."] } */
 ]
