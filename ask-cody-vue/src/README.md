@@ -9,7 +9,6 @@
 
 Component | Description
 ----------|------------
-|
 ChatWindow.vue | The full window that users will see and interact with. Combines many of the other Vue files defined in this folder; such as: *Header.vue, MessageList.vue, UserInput.vue*
 Launcher.vue | The button that should be visible on main page. It is used to open and close the chat window.
 Header.vue | The header of the ChatWindow; currently displays Clock Tower icon and project's working title 'AskCody'. Also contains a button as an option to close the window

@@ -9,7 +9,6 @@
 #### dev/src/
 Component | Description
 ----------|------------
-|
 App.vue | Demonstrates hosting the chat window and components in a larger website.
 Header.vue [!] | Template for the header of the test site. 
 Footer.vue [!] | Template for the footer of the test site. 
