@@ -33,9 +33,6 @@ export default {
   },
   components: {
     TextMessage,
-    FileMessage,
-    EmojiMessage,
-    TypingMessage,
     SystemMessage
   },
   props: {
