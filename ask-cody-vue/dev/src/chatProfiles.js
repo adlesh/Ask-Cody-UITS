@@ -1,12 +1,7 @@
 export default [
   {
-    id: 'mattmezza',
-    name: 'Matteo',
-    imageUrl: 'https://avatars3.githubusercontent.com/u/1915989?s=230&v=4'
-  },
-  {
-    id: 'support',
-    name: 'Support',
-    imageUrl: 'https://avatars3.githubusercontent.com/u/37018832?s=200&v=4'
+    id: 'cody',
+    name: 'Cody',
+    imageUrl: '../images/CSU_Logo_Tower_BlueBackground_32_32.png'
   }
 ]

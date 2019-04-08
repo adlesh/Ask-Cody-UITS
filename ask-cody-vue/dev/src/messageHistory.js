@@ -1,5 +1,5 @@
 export default [
-   { type: 'text', author: `me`, data: { text: `Hello. How may I assist you?` } },
+   { type: 'text', author: `cody`, data: { text: `Hello. How may I assist you?` } },
   /*{ type: 'text', author: `mattmezza`, data: { text: `What do you need salsa for?` } },
   { type: 'text', author: `me`, data: { text: `Salsa is now the number one condiment in America.` } },
   { type: 'text', author: `mattmezza`, data: { text: `You know why? Because people like to say 'salsa.' 'Excuse me, do you have salsa?' 'We need more salsa.' 'Where is the salsa? No salsa?'` } },

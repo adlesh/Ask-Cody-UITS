@@ -16,15 +16,19 @@
       :messageStyling="messageStyling"
     />
     <UserInput
-      v-if="!showUserList"      
+      v-if="!showUserList"
       :onSubmit="onUserInputSubmit"
       :suggestions="getSuggestions()"
       :placeholder="placeholder"
+      :colors="colors" />
+    <FeedbackPanel
+      v-if="!showUserList"
       :colors="colors" />
   </div>
 </template>
 
 <script>
+import FeedbackPanel from './FeedbackPanel.vue'
 import Header from './Header.vue'
 import MessageList from './MessageList.vue'
 import UserInput from './UserInput.vue'
@@ -34,7 +38,8 @@ export default {
   components: {
     Header,
     MessageList,
-    UserInput
+    UserInput,
+    FeedbackPanel
   },
   props: {
     showEmoji: {
