@@ -36,6 +36,7 @@
     * The above installs all project wide dependencies then installs all of them necessary for the implementation in the dev folder (a.k.a both are necessary as far as I can tell)
 
 3. Running the code...
+	*NOTE: When running with Git BASH, calling 'yarn' produces an error. You must use 'yarn.cmd' instead.*
     ```
     cd ask-cody-vue (or cd .. if in dev directory)
     ^^^ Just get to the root of the vue project ^^^
