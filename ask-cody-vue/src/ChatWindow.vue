@@ -127,6 +127,58 @@ export default {
   }
 }
 </script>
-<style scoped lang="scss" src="./styles/scss/ChatWindow.scss">
+<style scoped lang="scss" >
+.sc-chat-window {
+  width: 99%;
+  height: calc(100% - 120px);
+  max-height: 430px;
+  max-width: 320px;
+  position: fixed;
+  right: 25px;
+  bottom: 100px;
+  box-sizing: border-box;
+  box-shadow: 0px 7px 40px 2px rgba(148, 149, 150, 0.1);
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.sc-chat-window.closed {
+  opacity: 0;
+  visibility: hidden;
+  bottom: 90px;
+}
+
+.sc-message--me {
+  text-align: right;
+  border: 5px;
+  border-color: #000;
+}
+.sc-message--them {
+  text-align: left;
+  border: 5px;
+  border-color: #000;
+  border-width: 10px;
+}
+
+@media (max-width: 320px) {
+  .sc-chat-window {
+    width: 99%;
+    height: calc(100% - 120px);
+    max-height: 430px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 0px;
+  }
+  .sc-chat-window {
+    transition: 0.1s ease-in-out;
+  }
+  .sc-chat-window.closed {
+    bottom: 0px;
+  }
+}
 
 </style>
