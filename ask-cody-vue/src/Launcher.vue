@@ -4,8 +4,8 @@
       <div v-if="newMessagesCount > 0 && !isOpen" class="sc-new-messsages-count">
         {{newMessagesCount}}
       </div>
-      <img class="sc-open-icon" src="./assets/close-icon.png" />
-      <img class="sc-closed-icon" src="./assets/question_48_32b.png" />
+      <img class="sc-open-icon" src="./assets/close.svg" />
+      <img class="sc-closed-icon" src="./assets/question_48_32.png" />
     </div>
     <ChatWindow
       :messageList="messageList"

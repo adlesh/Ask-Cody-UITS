@@ -20,7 +20,8 @@
       :onSubmit="onUserInputSubmit"
       :suggestions="getSuggestions()"
       :placeholder="placeholder"
-      :colors="colors" />
+      :colors="colors"
+      @response="onBotResponse" />
   </div>
 </template>
 
@@ -107,6 +108,16 @@ export default {
     }
   },
   methods: {
+    created() {
+      
+    },
+    onBotResponse: function (text) {
+        this.messageList.push({
+                                    data: {text},
+                                    author: 'computer',
+                                    type: 'text'
+                                })
+    },
     handleUserListToggle (showUserList) {
       this.showUserList = showUserList
     },

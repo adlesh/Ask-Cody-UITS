@@ -8,7 +8,11 @@ module.exports = {
     publicPath: '/',
     filename: 'build.js'
   },
+  node: {
+    'fs': 'empty'
+  },
   module: {
+    
     rules: [
       {
         test: /\.vue$/,

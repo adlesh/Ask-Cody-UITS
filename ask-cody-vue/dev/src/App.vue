@@ -88,6 +88,7 @@ export default {
       this.colors = this.availableColors[color]
       this.chosenColor = color
     },
+    
     showStylingInfo() {
       this.$modal.show('dialog', {
         title: 'Info',
