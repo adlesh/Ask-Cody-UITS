@@ -32,6 +32,10 @@ module.exports = {
       }
     ]
   },
+
+  node: {
+    fs: 'empty'
+  },
   // devtool: '#source-map',
   plugins: [
     new webpack.DefinePlugin({

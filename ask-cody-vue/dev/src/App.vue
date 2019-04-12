@@ -1,4 +1,5 @@
 <template>
+  
   <div :style="{background: backgroundColor}">
     <!--Header :colors="colors" :chosenColor="chosenColor" /-->
     <beautiful-chat
@@ -88,6 +89,7 @@ export default {
       this.colors = this.availableColors[color]
       this.chosenColor = color
     },
+    
     showStylingInfo() {
       this.$modal.show('dialog', {
         title: 'Info',
