@@ -161,12 +161,14 @@ export default {
   text-align: right;
   border: 5px;
   border-color: #000;
+  font-weight: bold;
 }
 .sc-message--them {
   text-align: left;
   border: 5px;
   border-color: #000;
   border-width: 10px;
+  font-weight:bold;
 }
 
 @media (max-width: 320px) {
