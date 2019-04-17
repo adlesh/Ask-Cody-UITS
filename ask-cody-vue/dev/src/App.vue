@@ -1,5 +1,4 @@
-<template>
-  
+<template>  
   <div :style="{background: backgroundColor}">
     <!--Header :colors="colors" :chosenColor="chosenColor" /-->
     <beautiful-chat
