@@ -40,3 +40,7 @@ This project uses Ember.js web framework and Node along with the Pusher-js libra
 * Browser Extensions for Ember development
   * [ember inspector for Chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for Firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+
+
+[Ask-Cody-Vue](./docs/ask-cody-vue.md)<br/>
+[Ask-Cody-Ember](./docs/ask-cody-ember.md)
