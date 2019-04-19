@@ -19,5 +19,5 @@ UserInput.vue | Handles user input and prepares messages to be pushed out.
 ### src/assets/
 > Different resources like images, icons, etc. for use within the chat window itself.
 <p>
-* indicates currently unused or disabled in AskCody <br> ? indicates may be disabled after further discussion 
+! indicates currently unused or disabled in AskCody <br> ? indicates may be disabled after further discussion 
 </p>
