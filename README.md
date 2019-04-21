@@ -95,10 +95,13 @@ package manager for your code
     * yarn watch allows hot-editing
     * yarn dev builds the actual code for the site 
 
-<a type="hidden" id="runcode-ember"></a>
+<a type="hidden" id="feedback"></a>
 
 2. Launching Feedback Form from Ask-Cody-Vue panel
 
+![Demonstration of the Feedback Form](docs/assets/ask-vue-feedback.gif)
+
+<a type="hidden" id="runcode-ember"></a>
 
 ### Ask-Cody-Ember
 * __Make sure to set up a .env file _before_ running__
@@ -117,11 +120,8 @@ package manager for your code
 * Visit the base app at [http://localhost:4200](http://localhost:4200)
 * Open `cody-iframe.html` to see an early implementation of the AskCody wrapper project
 
-<a type="hidden" id="feedback"></a>
 
-## Feedback Form for user critiques
 
-![Demonstration of the Feedback Form](docs/assets/ask-vue-feedback.gif)
 
 <a type="hidden" id="readnext"></a>
 
