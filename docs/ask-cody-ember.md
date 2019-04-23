@@ -4,12 +4,12 @@ This code is merely included to document our progress and to act as a potential 
 
 * __Make sure to set up a .env file _before_ running with your api keys__
     ```bash
-        PUSHER_APP_ID="Pusher Dashboard > Select your app > select App Keys > COPY APP_ID OVER ALL OF THE TEXT IN THESE QUOTES"  
-        PUSHER_APP_KEY="dcf5aa164Pusher Dashboard > Select your app > select App Keys > COPY KEY OVER ALL OF THE TEXT IN THESE QUOTES"
-        PUSHER_APP_SECRET="Pusher Dashboard > Select your app > select App Keys > COPY SECRET OVER ALL OF THE TEXT IN THESE QUOTES"
-        PUSHER_APP_CLUSTER="Pusher Dashboard > Select your app > select App Keys > COPY CLUSTER OVER ALL OF THE TEXT IN THESE QUOTES"
+    PUSHER_APP_ID="Pusher Dashboard > Select your app > select App Keys > COPY APP_ID OVER ALL OF THE TEXT IN THESE QUOTES"  
+    PUSHER_APP_KEY="dcf5aa164Pusher Dashboard > Select your app > select App Keys > COPY KEY OVER ALL OF THE TEXT IN THESE QUOTES"
+    PUSHER_APP_SECRET="Pusher Dashboard > Select your app > select App Keys > COPY SECRET OVER ALL OF THE TEXT IN THESE QUOTES"
+    PUSHER_APP_CLUSTER="Pusher Dashboard > Select your app > select App Keys > COPY CLUSTER OVER ALL OF THE TEXT IN THESE QUOTES"
 
-        DEVELOPER_ACCESS_TOKEN="DialogFlow Dashboard > Select your bot > Click Gear > COPY API KEYS (V1) - DEVELOPER ACCESS TOKEN OVER ALL OF THE TEXT IN THESE QUOTES"
+    DEVELOPER_ACCESS_TOKEN="DialogFlow Dashboard > Select your bot > Click Gear > COPY API KEYS (V1) - DEVELOPER ACCESS TOKEN OVER ALL OF THE TEXT IN THESE QUOTES"
     ```
 * Launch the message server:  
     `node app.js`

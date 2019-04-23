@@ -98,7 +98,6 @@ package manager for your code
 <a type="hidden" id="feedback"></a>
 
 2. Launching Feedback Form from Ask-Cody-Vue panel
-
 ![Demonstration of the Feedback Form](docs/assets/ask-vue-feedback.gif)
 
 <a type="hidden" id="runcode-ember"></a>
