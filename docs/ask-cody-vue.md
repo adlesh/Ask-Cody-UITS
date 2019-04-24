@@ -1,23 +1,36 @@
 # Ask-Cody-Vue
-
-## Quick Note
-***
-1. Most of the Chat Window Components are defined in
-``` ask-cody-vue/src ```
-2. The actual working model is in
-``` ask-cody-vue/dev ```
+## Table of Contents
+1. [Working With Vue](#work-vue)
+    * [Documentation and Guides](#vue-guides)
+    * [Development Tools](#vue-devtools)
+2. [Vue-Beautiful-Chat](#vue-bchat)
 
 <a type="hidden" id="work-vue"></a>
-
 ## Working With Vue
+***
 Vue.js is designed to be an easy-to-learn, but powerful web framework. The core library focuses on the View layer (of MVC) to permit easy integration with existing projects or other frameworks. It is capable of creating immense [SPA](https://en.wikipedia.org/wiki/Single-page_application)'s that mimic the experience of desktop applications. 
 
-
+<a type="hidden" id="vue-guides"></a>
 * Documentation and Guides on Vue.js
     * [Vue Official Guide 2.x](https://vuejs.org/v2/guide/)
     * [Vue Official Examples 2.x](https://vuejs.org/v2/examples/)
 
+<a type="hidden" id="vue-devtools"></a>
+* Development Tools
+    * [Vue.js devtools](https://github.com/vuejs/vue-devtools)
+        * Browser extension that aids in debugging Vue.js projects
+        * Enables developers to:
+            * View live component tree 
+            * Make quick edits to a running project
+            * View events that were transmitted
+            * Monitor Routing/Performance of the system
+
+
+
+<a type="hidden" id="vue-bchat"></a>
+
 ## Vue-Beauitful-Chat Library
+***
 > A simple and beautiful Vue chat component designed to be backend agnostic, fully customisable and extendable.
 
 [See their Github here](https://github.com/mattmezza/vue-beautiful-chat)
@@ -89,6 +102,15 @@ UserInput.vue | Handles user input and prepares messages to be pushed out.
 
 ### src/assets/
 > Different resources like images, icons, etc. for use within the chat window itself.
+
+#### dev/src/
+Component | Description
+----------|------------
+App.vue | Demonstrates hosting the chat window and components in a larger website.
+Header.vue [!] | Template for the header of the test site. 
+Footer.vue [!] | Template for the footer of the test site. 
+colors.js | JSON file containing most of the colors for the test site
+
 <p>
 ! indicates currently unused or disabled in AskCody <br> ? indicates may be disabled after further discussion 
 </p>
