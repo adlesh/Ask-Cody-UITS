@@ -3,11 +3,11 @@
 
      Member | Email | Additional Information
     --- | --- | ---
-    Joseph Caldwell | caldwell__joseph1@columbusstate.edu | 
-    Andrew Lesh | lesh_andrew@columbusstate.edu | 
+    Joseph Caldwell | caldwell__joseph1@columbusstate.edu |
+    Andrew Lesh | lesh_andrew@columbusstate.edu |
     Elnatan Teklu | teklu_elnatan@columbusstae.edu | 
     Lucas Theobald | theobald_lucas@columbusstate.edu |
-    Kristen Wright | wright3_kristen@columbusstate.edu |
+    Kristen Wright | wright.kristen.cs@gmail.com |
 
 
 
@@ -23,10 +23,10 @@
 4. __Lucas Theobald__
     * email: theobald_lucas@columbusstate.edu
 5. __Kristen Wright__
-    * email: wright3_kristen@columbusstate.edu
+    * email: wright.kristen.cs@gmail.com
 
 <br/>
 
-Info | Joseph | Andrew 
+Info | Joseph | Andrew
 --- | --- | ---
 Email | caldwell_joseph1@columbusstate.edu| lesh_andrew@columbusstate.edu
