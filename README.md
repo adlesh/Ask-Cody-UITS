@@ -36,6 +36,8 @@ This project uses Vue.js web framework and Node along with the Axios library.
   A simple and beautiful Vue chat component backend agnostic, fully customisable and extendable.
 * [yarn](https://yarnpkg.com/en/)  
 package manager for your code
+* [git for Windows] (https://gitforwindows.org/)
+  While not a necessity, git for Windows provides a helpful BASH emulator for Windows-based users to execute git commands.
 
 <a id="getstart" type="hidden"></a>
 
