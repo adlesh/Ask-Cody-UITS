@@ -18,7 +18,7 @@
         ``` 
         git clone https://github.com/adlesh/uits-proto.git 
         ```
-    * Checking out the _alesh-dev_ branch is only necessary while the current work hasn't merged with _master_ 
+        * Checking out the _alesh-dev_ branch is only necessary while the current work hasn't merged with _master_ 
     2. Then checkout 
         ```      
         cd uits-proto
