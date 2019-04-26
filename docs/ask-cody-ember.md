@@ -1,6 +1,6 @@
 # ***NOTE: Ask-Cody-Ember was DEPRECATED in favor of Ask-Cody-Vue.***
 
-This code is merely included to document our progress and to act as a potential springboard for less-web-dev-centric students that may take over the project. We choose to go to Vue.js as several features in Ember are outdated and are no longer deemed stable. At the same time, Ask-Cody-Vue uses [DialogFlow]'s 
+This code is merely included to document our progress and to act as a potential springboard for less-web-dev-centric students that may take over the project. We choose to go to Vue.js as several features in Ember are outdated and are no longer deemed stable. At the same time, Ask-Cody-Vue uses [DialogFlow]'s v2 API and is the most updated version of the Dialogflow API.
 
 * __Make sure to set up a .env file _before_ running with your api keys__
     ```bash
@@ -36,5 +36,6 @@ This code is merely included to document our progress and to act as a potential 
   * [ember inspector for Chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for Firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+Next: [File breakdown & how-to for the Ember directory ->>](ember-docs/file-breakdown.md)
 
   [DialogFlow]: https://www.dialogflow.com

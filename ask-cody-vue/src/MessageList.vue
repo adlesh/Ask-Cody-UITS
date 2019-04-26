@@ -1,5 +1,5 @@
 <template>
-  <div class="sc-message-list" ref="scrollList" :style="{backgroundColor: colors.messageList.bg}">
+  <div class="sc-message-list" ref="scrollList">
     <Message v-for="(message, idx) in messages" :message="message" :chatImageUrl="chatImageUrl(message.author)" :authorName="authorName(message.author)" :key="idx" :colors="colors" :messageStyling="messageStyling" />
     <Message v-show="showTypingIndicator !== ''" :message="{author: showTypingIndicator, type: 'typing'}" :chatImageUrl="chatImageUrl(showTypingIndicator)" :colors="colors" :messageStyling="messageStyling" />
   </div>
@@ -81,5 +81,7 @@ export default {
   background-repeat: no-repeat;
   padding: 40px 0px;
   background-image: url('https://ur.columbusstate.edu/logos/logo_files/2015/CSU_Logo_Tower.png');
+  background-color: rgba(255,255,255,0.75);
+  background-blend-mode: lighten;
 }
 </style>
