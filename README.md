@@ -32,7 +32,7 @@ This project uses Vue.js web framework and Node along with the Axios library.
 
 <a type="hidden" id="must-install"></a>
 ### For the current project implementation you will need to install:
-* [Node.js](https://nodejs.org/en/) with [npm](https://www.npmjs.com/)
+* [Node.js](https://nodejs.org/en/) with [npm](https://www.npmjs.com/)  
   As an asynchronous event driven JavaScript runtime, Node is designed to build scalable network applications. If you've installed NodeJs, you probably already have npm. To verify, you can run `node -v` and `npm -v` in your terminal.
 * [yarn](https://yarnpkg.com/en/)  
   Package manager for your code. We use this to install all dependencies for the site. You can get your platform-specific installation instructions on the [yarn install page](https://yarnpkg.com/lang/en/docs/install/).
@@ -44,9 +44,9 @@ Additionally, make sure that you are using an operating system with access to a 
 We all like making the installation process easier for ourselves. Here are some package managers you can use to install all of your dependencies (such as Node and Yarn) quickly and easily. None of these are required but they will make things easier for you.
 * [git for Windows](https://gitforwindows.org/)  
   Git for Windows provides a helpful BASH emulator for Windows-based users to execute git commands. If you're planning on running the code in Windows, this will help.
-* [Chocolatey for Windows](https://chocolatey.org/)
+* [Chocolatey for Windows](https://chocolatey.org/)  
   Similar to Brew for MacOS, Chocolatey provides an easy way to install dependencies without using an installer or npm. You can use the commands `choco install yarn` and `choco install nodejs` to get everything you need to begin.
-* [Homebrew for MacOS](https://brew.sh/)
+* [Homebrew for MacOS](https://brew.sh/)  
   Homebrew is a fantastic project that installs a whole lot of tools a developer needs for MacOS. Typically a brew install includes nodejs automatically but you can also install it manually with `brew install node`. You can get yarn with `brew install yarn`. There's brew options for linux flavors as well!
 
 <a type="hidden" id="helpful-links"></a>
