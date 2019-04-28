@@ -80,7 +80,7 @@ We all like making the installation process easier for ourselves. Here are some 
 1. Get a copy of the source code
     * Currently available through: `https://github.com/csuchatbotteam/uits_frontend.git`
     * Using git: `git clone https://github.com/csuchatbotteam/uits_frontend.git`
-2. [Ask-Cody-Vue] is the current implementation
+2. [Ask-Cody-Vue] is the current implementation and requires node and yarn. Make sure you have everything you need to run the code before moving on.
     * Uses the [vue-beautiful-chat] package found here to create an intercom-like chat service
     * If you don't have all the dependencies [from above](#must-install) (Node and Yarn) then you will want to get them at this step!
     * Check to see if you have node and yarn with the following commands:
