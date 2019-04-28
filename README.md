@@ -1,6 +1,6 @@
 # AskCody v0.4
 
-![Ask-Cody-Vue demo](docs/assets/ask-vue-typing.gif)
+![Ask-Cody-Vue demo see: docs/assets/ask-vue-typing.gif](docs/assets/ask-vue-typing.gif)
 
 ## Table Of Contents
 1. [Foreword](#foreword)
@@ -65,8 +65,8 @@ Additionally, make sure that you are using an operating system with access to a 
 <a type="hidden" id="note-code"></a>
 ### Getting and installing the source code
 1. Get a copy of the source code
-    * Currently available through: `https://github.com/adlesh/uits-proto`
-    * Using git: `git clone https://github.com/adlesh/uits-proto.git`
+    * Currently available through: `https://github.com/csuchatbotteam/uits_frontend.git`
+    * Using git: `git clone https://github.com/csuchatbotteam/uits_frontend.git`
 2. [Ask-Cody-Vue] is the current implementation
     * Uses the [vue-beautiful-chat] package found here to create an intercom-like chat service
 3. Getting Dependencies

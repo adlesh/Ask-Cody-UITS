@@ -16,7 +16,7 @@
 1. Getting the code...
     1. Clone
         ``` 
-        git clone https://github.com/adlesh/uits-proto.git 
+        git clone https://github.com/csuchatbotteam/uits_frontend.git
         ```
         * Checking out the _alesh-dev_ branch is only necessary while the current work hasn't merged with _master_ 
     2. Then checkout 

@@ -49,7 +49,7 @@ Ensure you've read through the [Prerequisites Section](../README.md#prereqs) of 
 1. Getting the code...
     1. Clone
         ```bash 
-        git clone https://github.com/adlesh/uits-proto.git 
+        git clone https://github.com/csuchatbotteam/uits_frontend.git 
         ```
     
     2. Then checkout 
