@@ -80,8 +80,14 @@ We all like making the installation process easier for ourselves. Here are some 
 1. Get a copy of the source code
     * Currently available through: `https://github.com/adlesh/uits-proto`
     * Using git: `git clone https://github.com/adlesh/uits-proto.git`
-2. [Ask-Cody-Vue] is the current implementation
+2. [Ask-Cody-Vue] is the current implementation and requires node and yarn. Make sure you have everything you need to run the code before moving on.
     * Uses the [vue-beautiful-chat] package found here to create an intercom-like chat service
+    * If you don't have all the dependencies [from above](#must-install) (Node and Yarn) then you will want to get them at this step!
+    * Check to see if you have node and yarn with the following commands:
+      ```bash
+      node -v
+      yarn -v
+      ```
 3. Getting Dependencies
     * The node_modules directory is ignored by git to reduce download and upload times and must be generated
     * Ask-Cody-Vue uses yarn to manage packages, so the terminal commands you want to run are:
@@ -91,7 +97,7 @@ We all like making the installation process easier for ourselves. Here are some 
         cd ask-cody-vue/dev
         yarn
         ```
-
+The `yarn` process may take a moment but when it's done, you should have all the packages you need to run the chatbot site! You can then move on to [running the project](#runcode).
 
 <a type="hidden" id="runcode"></a>
 
