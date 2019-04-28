@@ -4,7 +4,7 @@
       <div v-if="newMessagesCount > 0 && !isOpen" class="sc-new-messsages-count">
         {{newMessagesCount}}
       </div>
-      <img class="sc-open-icon" src="./assets/close.svg" />
+      <img class="sc-open-icon" src="./assets/close-icon.png" />
       <img class="sc-closed-icon" src="./assets/question_48_32b.png" />
     </div>
     <ChatWindow
@@ -152,7 +152,7 @@ export default {
   }
 }
 </script>
-<style scoped lang="scss" >
+<style scoped lang="scss">
 .sc-launcher {
   width: 60px;
   height: 60px;
@@ -172,15 +172,13 @@ export default {
   position: relative;
   display: block;
   width: 60px;
-  height: 60px;  
+  height: 60px;
   border-radius: 50%;
   transition: box-shadow 0.2s ease-in-out;
 }
 
 .sc-launcher .sc-open-icon,
 .sc-launcher .sc-closed-icon {
-  width: 60px;
-  height: 60px;
   position: fixed;
   right: 25px;
   bottom: 25px;
@@ -188,12 +186,15 @@ export default {
 }
 
 .sc-launcher .sc-closed-icon {
-  transition: opacity 100ms ease-in-out, transform 100ms ease-in-out;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
+  padding-right: 5px;
+  padding-bottom: 2px;
 }
 
 .sc-launcher .sc-open-icon {
+  width: 60px;
+  height: 60px;
   padding: 20px;
   box-sizing: border-box;
   opacity: 0;
@@ -234,5 +235,4 @@ export default {
   font-size: 12px;
   font-weight: 500;
 }
-
 </style>

@@ -132,52 +132,23 @@ export default {
       }
     },
     loadResponse(text) {
-                  const vm = this;
+      const vm = this;
+      vm.axios.post(
 
+      'https://cors-anywhere.herokuapp.com/https://vast-inlet-86945.herokuapp.com/api/df_text_query', {
+                  "text": text,
+              })
+          .then(function (response) {
+              vm.botResponse = response.data.fulfillmentText;
+              vm.$emit('response', vm.botResponse);
 
-                  /* 
-
-                  digitalOcean server IP adress
-                  http://134.209.120.146:8080/api/df_text_query                    
-
-                  for the netlify demo I'm using the https herkou Server version with the added cors-anywhere, since I didn't add an ssl cert for the 134.XXX etc ...  digitalOcean server the request aren't accepted with the https netfliy deployed site.  
-
-                    */
-
-
-                  vm.axios.post(
-
-                  /*
-                        
-                        You can swap the heroku server with the digitalOcean server IP wihle in local host and everything will work fine. 
-                  
-                    */
-                    
-                  //  digitalOcean server IP : http://134.209.120.146:8080/api/df_text_query     
-
-                  'https://cors-anywhere.herokuapp.com/https://vast-inlet-86945.herokuapp.com/api/df_text_query', {
-                              "text": text,
-                          })
-                      .then(function (response) {
-                          vm.botResponse = response.data.fulfillmentText;
-                          vm.$emit('response', vm.botResponse);
-                          
-                          vm.computerMessage = ''
-
-                          /* Vue.nextTick(() => {
-                              let messageDisplay = vm.$refs.chatLogs
-                              messageDisplay.scrollTop = messageDisplay.scrollHeight
-                          }) */
-
-                      })
-                      .catch(function (error) {
-                          vm.message = error;
-                          console.log(vm.message);
-                          //console.log(response[0].queryResult);
-                      });
-
-
-              },
+          })
+          .catch(function (error) {
+              vm.message = error;
+              console.log(vm.message);
+          });
+    },  
+    
     _handleEmojiPicked (emoji) {
       this.onSubmit({
         author: 'me',

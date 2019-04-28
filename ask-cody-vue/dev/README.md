@@ -4,7 +4,7 @@
 
 ## Finding Your Way...
 ### ask-cody-vue/dev/
-> This is where the test site's code exists.
+> This is where the implementation of the test site's code exists.
 
 #### dev/src/
 Component | Description

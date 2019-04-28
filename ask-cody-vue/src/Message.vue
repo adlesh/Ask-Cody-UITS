@@ -132,7 +132,7 @@ export default {
   border-radius: 6px;
   border: #000;
   border-width: 5px;
-  font-weight: 300;
+  font-weight: 500 !important;
   font-size: 14px;
   line-height: 1.4;
   white-space: pre-wrap;
@@ -146,7 +146,7 @@ export default {
 }
 
 .sc-message--text code {
-  font-family: 'Courier New', Courier, monospace !important;
+  font-family: Tacoma, 'Courier New', Courier, monospace !important;
 }
 
 .sc-message--content.received .sc-message--text {
