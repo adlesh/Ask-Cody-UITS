@@ -6,7 +6,7 @@
 1. [Foreword](#foreword)
 2. [Prerequisites](#prereqs)
     * [What you'll need](#must-install)
-    * [Whay you might want](#might-install)
+    * [What you might want](#might-install)
     * [Helpful links](#helpful-links)
 3. [Getting Started](#getstart)
     * [Quick Note](#getstart-note)
@@ -125,7 +125,7 @@ The `yarn` process may take a moment but when it's done, you should have all the
     yarn dev
     ```
     * Run the above script in a new terminal instance (new tab or window) so that you're running `yarn watch` and `yarn dev` concurrently.
-    * The site will launch on localhost:4200/ unless you've specified something different. Now you can interact with the chat window!
+    * The site will launch on localhost:8080/ unless you've specified something different. Now you can interact with the chat window!
     * With both `watch` and `dev` running correctly, you should be able to see any edits you make to the site as you go.
 
 
