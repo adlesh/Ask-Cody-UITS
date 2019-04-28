@@ -4,6 +4,7 @@
     * [Documentation and Guides](#vue-guides)
     * [Development Tools](#vue-devtools)
 2. [Vue-Beautiful-Chat](#vue-bchat)
+3. [Finding Your Way](#find-src)
 
 <a type="hidden" id="work-vue"></a>
 ## Working With Vue
@@ -50,12 +51,13 @@ Ensure you've read through the [Prerequisites Section](../README.md#prereqs) of 
         ```bash 
         git clone https://github.com/adlesh/uits-proto.git 
         ```
-    * Checking out the _any non-master_ branch is only necessary while the current work hasn't merged with _master_ 
+    
     2. Then checkout 
         ```bash      
         cd uits-proto
         git checkout alesh-dev
         ```    
+        * Checking out _any non-master_ branch is only necessary while the current work hasn't merged with _master_ 
 
 2. Installing dependencies for the code...
     ```bash
@@ -67,7 +69,7 @@ Ensure you've read through the [Prerequisites Section](../README.md#prereqs) of 
 
     * The above installs all project wide dependencies then installs all of them necessary for the implementation in the dev folder (a.k.a both are necessary as far as I can tell)
 
-3. Running the code...
+3. Running the code...  
 	*NOTE: When running with Git BASH, calling 'yarn' produces an error. You must use 'yarn.cmd' instead.*
     ```
     cd ask-cody-vue (or cd .. if in dev directory)
