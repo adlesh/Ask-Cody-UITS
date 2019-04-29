@@ -1,5 +1,5 @@
 {
-  "name": "Ask-Cody-Vuev0.4",
+  "name": "demo",
   "version": "1.0.0",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",

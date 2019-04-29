@@ -1,6 +1,6 @@
 <template>
   <div class="sc-header" :style="{background: colors.header.bg, color: colors.header.text}">
-    <img class="sc-header--img" :src="imageUrl" alt="" v-if="imageUrl" />
+    <img class="sc-header--img" src="./assets/CSU_Logo_Tower_BlueBackground_32_32.png" alt="" v-if="imageUrl" />
     <div class="sc-header--title" @click="toggleUserList"> AskCody </div>
     <div class="sc-header--close-button" @click="onClose">
       <img src="./assets/close-icon.png" alt="" />
