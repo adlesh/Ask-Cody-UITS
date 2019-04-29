@@ -1,6 +1,6 @@
 # AskCody v0.4
 
-![Ask-Cody-Vue demo see: docs/assets/ask-vue-typing.gif](docs/assets/ask-vue-typing.gif)
+![Ask-Cody-Vue Demonstration see: docs/assets/ask-vue-demo.gif](docs/assets/ask-vue-demo.gif)
 
 ## Table Of Contents
 1. [Foreword](#foreword)
