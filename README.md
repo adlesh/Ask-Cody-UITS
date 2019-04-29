@@ -9,6 +9,7 @@
     * [What you might want](#might-install)
     * [Helpful links](#helpful-links)
 3. [Getting Started](#getstart)
+    * [Running the standalone site](#standalone)
     * [Quick Note](#getstart-note)
         * [Theming](#note-themes)
         * [Getting The Code](#note-code)
@@ -28,10 +29,10 @@
 
 ## Prerequisites
 ***
-This project uses Vue.js web framework and Node along with the Axios library.
+This project uses Vue.js web framework and Node along with the Axios library. ***You can skip this step if you're just looking to run the standalone site; if so, jump to [running the standalone site](#standalone). If you're looking at compiling the source code to make edits, you will need these.***
 
 <a type="hidden" id="must-install"></a>
-### For the current project implementation you will need to install:
+### For building the current project implementation you will need to install:
 * [Node.js](https://nodejs.org/en/) with [npm](https://www.npmjs.com/)  
   As an asynchronous event driven JavaScript runtime, Node is designed to build scalable network applications. If you've installed NodeJs, you probably already have npm. To verify, you can run `node -v` and `npm -v` in your terminal.
 * [yarn](https://yarnpkg.com/en/)  
@@ -60,6 +61,14 @@ We all like making the installation process easier for ourselves. Here are some 
 
 ## Getting Started
 ***
+
+<a type="hidden" id="standalone"></a>
+### Running the standalone site
+A standalone build is available for demo. You can find the full standalone build in the `./build/` directory. Just download the build folder and launch the site by opening `ask-cody-vue.html` in your web browser.
+
+There is more info in the build's [readme.txt](build/readme.txt).
+
+
 <a type="hidden" id="getstart-note"></a>
 
 ### Quick Note From Team 0
